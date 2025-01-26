@@ -1,12 +1,18 @@
 class InvestmentExpertSystem:
     def __init__(self):
         self.rules = [
-            {"conditions": {"risk_tolerance": "high", "time_horizon": "short", "market_condition": "bullish"}, "recommendation": "Cryptocurrency"},
-            {"conditions": {"risk_tolerance": "low", "time_horizon": "long", "market_condition": "stable"}, "recommendation": "Government Bonds"},
-            {"conditions": {"risk_tolerance": "medium", "time_horizon": "medium", "diversification": "low"}, "recommendation": "Mutual Funds"},
-            {"conditions": {"risk_tolerance": "high", "time_horizon": "long", "diversification": "high"}, "recommendation": "Stocks"},
-            {"conditions": {"risk_tolerance": "low", "time_horizon": "short", "market_condition": "bearish"}, "recommendation": "Money Market Funds"},
-            {"conditions": {"risk_tolerance": "medium", "time_horizon": "long", "diversification": "moderate"}, "recommendation": "Index Funds"},
+            {"conditions": {"risk_tolerance": "high", "time_horizon": "short", "market_condition": "bullish"}, 
+            "recommendation": "Crypto"},
+            {"conditions": {"risk_tolerance": "low", "time_horizon": "long", "market_condition": "stable"}, 
+            "recommendation": "Government Bonds"},
+            {"conditions": {"risk_tolerance": "medium", "time_horizon": "medium", "diversification": "low"}, 
+            "recommendation": "Funds"},
+            {"conditions": {"risk_tolerance": "high", "time_horizon": "long", "diversification": "high"}, 
+            "recommendation": "Common Stocks"},
+            {"conditions": {"risk_tolerance": "low", "time_horizon": "short", "market_condition": "bearish"}, 
+            "recommendation": "Money Market Funds"},
+            {"conditions": {"risk_tolerance": "medium", "time_horizon": "long", "diversification": "moderate"}, 
+            "recommendation": "Exchange-Traded Funds"},
         ]
 
     def recommend_investments(self, profile):
